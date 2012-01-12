@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>CMUCrew</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "application"%>
+  <link rel=Stylesheet href="../public/stylesheets/application" %>
+    <%= csrf_meta_tag %>
+    <%= yield(:head) %>
 </head>
 <body>
 
