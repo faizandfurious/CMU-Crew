@@ -1,0 +1,25 @@
+<%= form_for(@user_fundraiser) do |f| %>
+  <% if @user_fundraiser.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_fundraiser.errors.count, "error") %> prohibited this user_fundraiser from being saved:</h2>
+
+      <ul>
+      <% @user_fundraiser.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :fundraiser_id %><br />
+    <%= f.number_field :fundraiser_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  fundraiser_type: 1
+  date: 2012-01-12 11:16:39
+  location: MyText
+  description: MyText
+
+two:
+  name: MyString
+  fundraiser_type: 1
+  date: 2012-01-12 11:16:39
+  location: MyText
+  description: MyText

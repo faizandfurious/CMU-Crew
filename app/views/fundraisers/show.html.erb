@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @fundraiser.name %>
+</p>
+
+<p>
+  <b>Fundraiser type:</b>
+  <%= @fundraiser.fundraiser_type %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @fundraiser.date %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @fundraiser.location %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @fundraiser.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_fundraiser_path(@fundraiser) %> |
+<%= link_to 'Back', fundraisers_path %>

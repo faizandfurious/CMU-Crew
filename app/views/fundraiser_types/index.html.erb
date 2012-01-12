@@ -1,0 +1,23 @@
+<h1>Listing fundraiser_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @fundraiser_types.each do |fundraiser_type| %>
+  <tr>
+    <td><%= fundraiser_type.name %></td>
+    <td><%= link_to 'Show', fundraiser_type %></td>
+    <td><%= link_to 'Edit', edit_fundraiser_type_path(fundraiser_type) %></td>
+    <td><%= link_to 'Destroy', fundraiser_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Fundraiser type', new_fundraiser_type_path %>

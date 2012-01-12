@@ -1,4 +1,12 @@
 CMUCrew::Application.routes.draw do
+  resources :user_fundraisers
+
+  resources :fundraiser_types
+
+  resources :fundraisers
+
+  resources :users
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
